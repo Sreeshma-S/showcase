@@ -249,8 +249,8 @@ img {
     background: var(--backend-color);
 }
 
-.b-card:nth-last-child(2),
-.b-card:nth-last-child(10)
+.b-card:nth-last-child(3),
+.b-card:nth-last-child(11)
 {
     border-right: 1px solid #747474;
     height:2px;
@@ -261,7 +261,7 @@ img {
 }
 
 .grid-10 {
-    grid-template-columns: 8% 7% 8% 8% 10% 8% 10% 10% 10% 10%;
+    grid-template-columns: 8% 7% 8% 8% 8% 9% 8% 8% 8% 8% 8% 8%;
 }
 
 /* Mobile view */
@@ -299,7 +299,24 @@ img {
 }
 
 .grid-7 {
-    grid-template-columns: 8% 13% 10% 8% 11% 10% 8%;
+    /* grid-template-columns: 6% 12% 9% 6% 9% 9% 6% 9% 10% 8% 8% 10% 10% 9% 9%; */
+    grid-template-columns: 8% 12% 9% 10% 9% 10% 11% 9%;
+}
+
+/* Operating System */
+.grid-4 {
+    grid-template-columns: 10% 10% 10% 10%;
+}
+
+.o-card {
+    background: var(--tools-color);
+    border-radius: 10px;
+}
+
+.o-card:nth-last-child(4)
+{
+    border-right: 1px solid #747474;
+    height:2px;
 }
 
 /* Projects */
