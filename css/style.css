@@ -525,10 +525,17 @@ img {
 /* Resume Section */
 
 .resume-container {
-    max-width: 1370px;
+    /* max-width: 1370px; */
     margin: 0 auto;
-    color: blue;
     padding: 80px 15px;
+    background:#f4ece6;
+    max-width:850px !important;
+}
+
+.resume-card{
+    max-width:685px;
+    margin: 0 auto;
+    padding: 25px 15px;
 }
 
 .experience {
@@ -538,13 +545,15 @@ img {
   font-weight:300;
   min-height:100%;
   min-height:100vh;
-  @include breakpoint(brother-bear) { width: 100%; }
+  @include breakpoint(brother-bear) { width: 100%; } 
+  
   h3.experience-title {
     color:$linkColor;
     text-align:left;
     text-transform:uppercase;
     margin-bottom:20px;
   }
+
   .company-wrapper {
     width:30%;
     float:left;
@@ -561,10 +570,59 @@ img {
     margin-bottom:60px;
     @include breakpoint(baby-bear) {width:100%;margin-bottom:40px;}
   }
+  .experience-company {
+      color:black;
+      margin-bottom:15px;
+      font-size:14px;
+      font-weight:600;
+      
+  }
   .experience-title {
       color:black;
       margin-bottom:15px;
-    }
+  }
+  .job-title{
+      color:black;
+      margin-bottom:15px;
+      font-size:14px;
+      font-weight:550;
+      /* width:450px !important; */
+      width:150px !important;
+      text-align:center;
+  }
+  .company-description {
+      text-align:justify;
+      font-size:13px;
+      font-weight:500;
+      /* width:400px !important; */
+      width:200px !important;
+      margin-left:30px;
+  }
+  .education-title {
+      color:black;
+      margin-bottom:15px;
+      font-size:16px;
+      font-weight:600;
+      /* width:300px !important; */
+      width:150px !important;
+  }
+  .degree-title {
+    font-size:14px;
+    font-weight:550;
+    /* width:500px !important; */
+    width:200px !important;
+    text-align:center;
+  }
+  .degree-description {
+    font-size:13px;
+    font-weight:500;
+    margin-left:30px;
+    /* width:450px !important; */
+    width:150px !important;
+    text-align:center;
+  }
+
+
 }
 
 .row:after {
@@ -877,8 +935,10 @@ img {
 @media (max-width: 700px) and (max-height: 800px) {
     /* About */
     .about-square {
-        width: 700px;
-        height: 550px;
+        /* width: 700px;
+        height: 550px; */
+        width: 375px;
+        height: 600px;
         top: 20%;
     }
     .identity-card {
